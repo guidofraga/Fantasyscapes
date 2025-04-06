@@ -1,4 +1,4 @@
-# Fantasy Map Generator
+# Fantasyscapes Map Generator
 
 A browser-based fantasy map generator that creates procedurally generated maps for tabletop RPGs, worldbuilding, and creative writing.
 
