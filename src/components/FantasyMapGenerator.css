@@ -1,0 +1,166 @@
+/* Custom styles for the Fantasy Map Generator */
+
+/* Range input styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  outline: none;
+  border-radius: 8px;
+}
+
+/* Range input thumb (the slider handle) */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #4f46e5;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #4f46e5;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+  background: #6366f1;
+}
+
+input[type="range"]:hover::-moz-range-thumb {
+  background: #6366f1;
+}
+
+/* Custom color for different sliders */
+input[type="range"]#oceanDepth::-webkit-slider-thumb {
+  background: #3b82f6;
+}
+input[type="range"]#mountainDensity::-webkit-slider-thumb {
+  background: #78716c;
+}
+input[type="range"]#forestDensity::-webkit-slider-thumb {
+  background: #22c55e;
+}
+input[type="range"]#riverCount::-webkit-slider-thumb {
+  background: #0ea5e9;
+}
+input[type="range"]#cityCount::-webkit-slider-thumb {
+  background: #f59e0b;
+}
+
+input[type="range"]#oceanDepth::-moz-range-thumb {
+  background: #3b82f6;
+}
+input[type="range"]#mountainDensity::-moz-range-thumb {
+  background: #78716c;
+}
+input[type="range"]#forestDensity::-moz-range-thumb {
+  background: #22c55e;
+}
+input[type="range"]#riverCount::-moz-range-thumb {
+  background: #0ea5e9;
+}
+input[type="range"]#cityCount::-moz-range-thumb {
+  background: #f59e0b;
+}
+
+/* Dark Mode Styles */
+.dark-mode input[type="range"] {
+  background-color: #374151;
+}
+
+.dark-mode input[type="range"]::-webkit-slider-thumb {
+  border-color: #4b5563;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode input[type="range"]::-moz-range-thumb {
+  border-color: #4b5563;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode input[type="range"]#oceanDepth {
+  background-color: #1e3a8a;
+}
+
+.dark-mode input[type="range"]#mountainDensity {
+  background-color: #44403c;
+}
+
+.dark-mode input[type="range"]#forestDensity {
+  background-color: #14532d;
+}
+
+.dark-mode input[type="range"]#riverCount {
+  background-color: #0c4a6e;
+}
+
+.dark-mode input[type="range"]#cityCount {
+  background-color: #92400e;
+}
+
+/* Loading spinner animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+  cursor: pointer;
+  border-color: #d1d5db;
+}
+
+.dark-mode input[type="checkbox"] {
+  border-color: #4b5563;
+  background-color: #374151;
+}
+
+/* Canvas styling */
+canvas {
+  transition: box-shadow 0.3s ease;
+}
+
+canvas:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode canvas:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Improved button transitions */
+button {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Smooth transition for all elements */
+body, body * {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Switch animation */
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.theme-switch:hover {
+  transform: scale(1.1);
+} 
